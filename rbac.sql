@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 80019
 File Encoding         : 65001
 
-Date: 2020-07-27 20:22:07
+Date: 2020-07-27 20:55:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -80,7 +80,7 @@ CREATE TABLE `role_permission` (
   KEY `r_pid` (`pid`),
   CONSTRAINT `p_rid` FOREIGN KEY (`rid`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `r_pid` FOREIGN KEY (`pid`) REFERENCES `permission` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of role_permission
@@ -101,6 +101,35 @@ INSERT INTO `role_permission` VALUES ('13', '1', '13');
 INSERT INTO `role_permission` VALUES ('14', '1', '14');
 INSERT INTO `role_permission` VALUES ('15', '1', '15');
 INSERT INTO `role_permission` VALUES ('16', '1', '16');
+INSERT INTO `role_permission` VALUES ('17', '2', '14');
+INSERT INTO `role_permission` VALUES ('18', '2', '15');
+INSERT INTO `role_permission` VALUES ('19', '2', '16');
+INSERT INTO `role_permission` VALUES ('20', '2', '1');
+INSERT INTO `role_permission` VALUES ('21', '2', '2');
+INSERT INTO `role_permission` VALUES ('22', '2', '3');
+INSERT INTO `role_permission` VALUES ('23', '2', '4');
+INSERT INTO `role_permission` VALUES ('24', '2', '5');
+INSERT INTO `role_permission` VALUES ('25', '2', '6');
+INSERT INTO `role_permission` VALUES ('26', '2', '7');
+INSERT INTO `role_permission` VALUES ('27', '2', '8');
+INSERT INTO `role_permission` VALUES ('31', '2', '12');
+INSERT INTO `role_permission` VALUES ('32', '2', '13');
+INSERT INTO `role_permission` VALUES ('33', '3', '13');
+INSERT INTO `role_permission` VALUES ('34', '3', '14');
+INSERT INTO `role_permission` VALUES ('35', '3', '15');
+INSERT INTO `role_permission` VALUES ('36', '3', '1');
+INSERT INTO `role_permission` VALUES ('37', '3', '2');
+INSERT INTO `role_permission` VALUES ('38', '3', '3');
+INSERT INTO `role_permission` VALUES ('39', '3', '4');
+INSERT INTO `role_permission` VALUES ('40', '3', '5');
+INSERT INTO `role_permission` VALUES ('41', '4', '13');
+INSERT INTO `role_permission` VALUES ('42', '4', '14');
+INSERT INTO `role_permission` VALUES ('43', '4', '1');
+INSERT INTO `role_permission` VALUES ('44', '4', '2');
+INSERT INTO `role_permission` VALUES ('45', '4', '3');
+INSERT INTO `role_permission` VALUES ('46', '5', '13');
+INSERT INTO `role_permission` VALUES ('47', '5', '14');
+INSERT INTO `role_permission` VALUES ('48', '5', '1');
 
 -- ----------------------------
 -- Table structure for user
