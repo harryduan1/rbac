@@ -1,8 +1,6 @@
 package com.example.nacosprovider.controller;
 
-import com.example.nacosprovider.entity.Permission;
-import com.example.nacosprovider.entity.User;
-import org.springframework.stereotype.Controller;
+import com.example.nacosprovider.po.Permission;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

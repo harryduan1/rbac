@@ -1,7 +1,8 @@
 package com.example.nacosprovider.controller;
 
-import com.example.nacosprovider.entity.Role;
-import com.example.nacosprovider.service.RoleService;
+import com.example.nacosprovider.po.Role;
+import com.example.nacosprovider.service.IRoleService;
+import com.example.nacosprovider.service.impl.RoleServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,11 +15,11 @@ import java.util.List;
 @RequestMapping("/role")
 public class RoleController {
     @Autowired
-    private RoleService roleService;
+    private IRoleService iRoleService;
 
     @GetMapping("/selectAll")
     public List<Role> selectAll(){
-        return roleService.selectAll();
+        return iRoleService.selectAll();
     }
 
     public void add(Role role){

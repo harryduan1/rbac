@@ -1,7 +1,7 @@
 package com.example.nacosprovider.controller;
 
-import com.example.nacosprovider.entity.User;
-import com.example.nacosprovider.service.UserService;
+import com.example.nacosprovider.po.User;
+import com.example.nacosprovider.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class UserController {
 
     @Autowired
-    private UserService userService;
+    private IUserService userService;
 
     @GetMapping("/selectAll")
     public List<User> selectAll(){
